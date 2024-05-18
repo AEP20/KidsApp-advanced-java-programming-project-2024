@@ -1,4 +1,4 @@
-# KidsApp Application
+# CMP2004 Advanced Java Programming Project Spring 2024
 
 ## About the Project
 KidsApp is an Android application developed for children aged 7-10. This application teaches children how to read analog and digital clocks, learn about seasons, directions, and spell words. Additionally, it teaches children multiplication and provides positive feedback after each correct answer. The app supports both Turkish and English.
@@ -56,3 +56,8 @@ The operations and API requests performed on the server side are as follows:
 - **Retrofit:** An HTTP client used to make API requests. This library is used for server communication and handling JSON data.
 - **Navigation Component:** A library used for navigating between different screens in the application.
 - **Glide:** An image loading library used for loading and displaying images.
+
+## Contributors
+- https://github.com/AEP20 (Ahmet Emre Parmaksız)
+- https://github.com/denizozm (Deniz Özmen)
+- https://github.com/Midzer00 (Ömer Dursun)
