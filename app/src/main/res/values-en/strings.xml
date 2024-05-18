@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">KidsGame</string>
+    <string name="login_title">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Dont have an account?</string>
+    <string name="error_empty_username">Please enter a username</string>
+    <string name="error_empty_password">Please enter a password</string>
+    <string name="login_error">Incorrect username or password</string>
+    <string name="login_failure">An error occurred: </string>
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="alert">Alert</string>
+    <string name="language_set_to_english">Language set to English</string>
+    <string name="language_set_to_turkish">Language set to Turkish</string>
+    <string name="registration_successful">Registration successful!</string>
+    <string name="username_already_exists">Username already exists.</string>
+    <string name="registration_error">Registration Error</string>
+    <string name="register_title">Create An Account</string>
+
+    <!-- Quiz Button Texts in English -->
+    <string name="quiz_clock">Clock Quiz</string>
+    <string name="quiz_math">Math Quiz</string>
+    <string name="quiz_seasons">Seasons Quiz</string>
+    <string name="quiz_directions">Directions Quiz</string>
+
+    <string name="logout_button">Log Out</string>
+    <string name="navigate_login">I have already an account</string>
+    <string name="create_account">Create the account now</string>
+
+    <string name="return_to_menu">Return to Home</string>
+
+</resources>

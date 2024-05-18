@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2017", // Node.js uyumlu hedef
+    "module": "commonjs",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}

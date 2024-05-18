@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeScreenFragment">
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.example.kidsgame.ui.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_quizScreenSixFragment"
+            app:destination="@id/quizScreenSixFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_quizScreenFiveFragment"
+            app:destination="@id/quizScreenFiveFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_quizScreenFourFragment"
+            app:destination="@id/quizScreenFourFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_quizScreenThreeFragment"
+            app:destination="@id/quizScreenThreeFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_quizScreenTwoFragment"
+            app:destination="@id/quizScreenTwoFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_quizScreenOneFragment"
+            app:destination="@id/quizScreenOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreenFragment"
+        android:name="com.example.kidsgame.ui.LoginScreenFragment"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreenFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+        <action
+            android:id="@+id/action_loginScreenFragment_to_registerScreenFragment"
+            app:destination="@id/registerScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerScreenFragment"
+        android:name="com.example.kidsgame.ui.RegisterScreenFragment"
+        android:label="fragment_register_screen"
+        tools:layout="@layout/fragment_register_screen" >
+        <action
+            android:id="@+id/action_registerScreenFragment_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment" />
+        <action
+            android:id="@+id/action_registerScreenFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizScreenOneFragment"
+        android:name="com.example.kidsgame.ui.QuizScreenOneFragment"
+        android:label="fragment_quiz_screen_one"
+        tools:layout="@layout/fragment_quiz_screen_one" >
+        <action
+            android:id="@+id/action_quizScreenOneFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizScreenTwoFragment"
+        android:name="com.example.kidsgame.ui.QuizScreenTwoFragment"
+        android:label="fragment_quiz_screen_two"
+        tools:layout="@layout/fragment_quiz_screen_two" >
+        <action
+            android:id="@+id/action_quizScreenTwoFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizScreenThreeFragment"
+        android:name="com.example.kidsgame.ui.QuizScreenThreeFragment"
+        android:label="fragment_quiz_screen_three"
+        tools:layout="@layout/fragment_quiz_screen_three" >
+        <action
+            android:id="@+id/action_quizScreenThreeFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizScreenFourFragment"
+        android:name="com.example.kidsgame.ui.QuizScreenFourFragment"
+        android:label="fragment_quiz_screen_four"
+        tools:layout="@layout/fragment_quiz_screen_four" >
+        <action
+            android:id="@+id/action_quizScreenFourFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizScreenSixFragment"
+        android:name="com.example.kidsgame.ui.QuizScreenSixFragment"
+        android:label="fragment_quiz_screen_six"
+        tools:layout="@layout/fragment_quiz_screen_six" >
+        <action
+            android:id="@+id/action_quizScreenSixFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizScreenFiveFragment"
+        android:name="com.example.kidsgame.ui.QuizScreenFiveFragment"
+        android:label="fragment_quiz_screen_five"
+        tools:layout="@layout/fragment_quiz_screen_five" >
+        <action
+            android:id="@+id/action_quizScreenFiveFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.example.kidsgame.ui.BaseFragment"
+        android:label="fragment_base"
+        tools:layout="@layout/fragment_base" />
+</navigation>

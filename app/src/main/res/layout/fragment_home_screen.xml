@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".ui.HomeScreenFragment">
+
+    <!-- Kullanıcı Bilgileri Bölümü -->
+    <LinearLayout
+        android:id="@+id/userInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/homeUsernameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/teal"
+            android:gravity="center"
+            android:minWidth="120dp"
+            android:minHeight="48dp"
+            android:onClick="onLogoutButtonClick"
+            android:text="çıkış yap"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Tıklanabilir Kareler -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userInfoLayout">
+
+        <!-- Saat Quizi Butonu -->
+        <LinearLayout
+            android:id="@+id/gridButton1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/outlined_button"
+            android:gravity="center"
+            android:onClick="onGridButtonClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gridButtonImage1"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_margin="8dp"
+                android:contentDescription="Saat Quizi Resmi"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/gridButtonText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Saat Quizi"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Çarpım Quizi Butonu -->
+        <LinearLayout
+            android:id="@+id/gridButton2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/outlined_button"
+            android:gravity="center"
+            android:onClick="onGridButtonClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gridButtonImage2"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_margin="8dp"
+                android:contentDescription="Çarpım Quizi Resmi"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/gridButtonText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Çarpım Quizi"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Mevsimler Quizi Butonu -->
+        <LinearLayout
+            android:id="@+id/gridButton3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/outlined_button"
+            android:gravity="center"
+            android:onClick="onGridButtonClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gridButtonImage3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="8dp"
+                android:contentDescription="Mevsimler Quizi Resmi"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/gridButtonText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Mevsimler Quizi"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Yönler Quizi Butonu -->
+        <LinearLayout
+            android:id="@+id/gridButton4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/outlined_button"
+            android:gravity="center"
+            android:onClick="onGridButtonClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gridButtonImage4"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_margin="8dp"
+                android:contentDescription="Yönler Quizi Resmi"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/gridButtonText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Yönler Quizi"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Diğer Butonlar -->
+        <Button
+            android:id="@+id/gridButton5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/gridButton6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:textColor="#000000" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

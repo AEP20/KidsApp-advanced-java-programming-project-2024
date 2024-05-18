@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">KidsGame</string>
+    <string name="login_title">Giriş Yap</string>
+    <string name="username_hint">Kullanıcı Adı</string>
+    <string name="password_hint">Şifre</string>
+    <string name="login_button">Giriş Yap</string>
+    <string name="register_button">Henüz Hesabım yok</string>
+    <string name="error_empty_username">Lütfen kullanıcı adını girin</string>
+    <string name="error_empty_password">Lütfen şifreyi girin</string>
+    <string name="login_error">Kullanıcı adı veya şifre yanlış</string>
+    <string name="login_failure">Bir hata oluştu: </string>
+    <string name="ok">Tamam</string>
+    <string name="error">Hata</string>
+    <string name="alert">Uyarı</string>
+    <string name="language_set_to_english">Dil İngilizce olarak ayarlandı</string>
+    <string name="language_set_to_turkish">Dil Türkçe olarak ayarlandı</string>
+    <string name="registration_successful">Kayıt başarılı!</string>
+    <string name="username_already_exists">Kullanıcı adı zaten mevcut.</string>
+    <string name="registration_error">Kayıt Hatası</string>
+    <string name="register_title">Hesap Oluştur</string>
+
+    <string name="logout_button">Çıkış Yap</string>
+    <string name="quiz_clock">Saat Quizi</string>
+    <string name="quiz_math">Çarpım Quizi</string>
+    <string name="quiz_seasons">Mevsimler Quizi</string>
+    <string name="quiz_directions">Yönler Quizi</string>
+
+    <string name="navigate_login">Zaten Bir Hesabım var</string>
+    <string name="create_account">Hesabı şimdi oluştur</string>
+
+    <string name="return_to_menu">Menüye Dön</string>
+
+</resources>
